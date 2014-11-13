@@ -1,8 +1,8 @@
 {
   "name": "react-modalize",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "",
-  "main": "js/build/index.js",
+  "main": "dist/modal.js",
   "dependencies": {
     "lodash": "~2.4.1",
     "jquery-ui": "~1.10.5",
