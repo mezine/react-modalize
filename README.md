@@ -14,6 +14,7 @@
 * Uses escape key to cancel modal
 * Programmatically cancel (e.g. by clicking a "cancel" button or an "x" in the UI)
 * The React Modal can be used from a React component or a non-React component
+* A single instance of a modal can be re-used instead of creating a new instance for every modal (e.g. if you have 100 dates, you don't get 100 date pickers)
 
 
 ## Creating a Modal

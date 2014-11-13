@@ -1,8 +1,8 @@
 {
   "name": "react-modalize",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "",
-  "main": "js/lib/modal",
+  "main": "js/build/index.js",
   "dependencies": {
     "lodash": "~2.4.1",
     "jquery-ui": "~1.10.5",
@@ -23,7 +23,8 @@
     "gulp-uglify": "~0.3.1",
     "reactify": "~0.14.1",
     "gulp-react-bundle": "~0.1.7",
-    "react-tools": "~0.12.0"
+    "react-tools": "~0.12.0",
+    "gulp-es6-transpiler": "~1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

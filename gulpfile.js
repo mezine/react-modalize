@@ -7,6 +7,8 @@
 // TODO: When in production, use '.min.js'
 
 var gulp = require('gulp');
+var es6transpiler = require('gulp-es6-transpiler');
+
 var browserify = require('browserify');
 var watchify = require('watchify');
 var source = require('vinyl-source-stream');
@@ -112,4 +114,14 @@ var reactBundle = require('gulp-react-bundle');
 gulp.task('default', function() {
   // bundle('./js/index.js', './js/build/bundle.js', libs);
   reactBundle('./js/app/app.js', './js/build/app.js');
+});
+
+gulp.task('build', function () {
+  var react = require('gulp-react');
+  gulp.src('./js/lib/modal.js')
+    .pipe(react())
+    .pipe(es6transpiler())
+    .pipe(gulp.dest('./dist'));
+  gulp.src('./js/lib/modal-mixin.js')
+    .pipe(gulp.dest('./dist'));
 });
