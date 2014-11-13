@@ -2,19 +2,16 @@
 
 ## Features
 
-* Create Modal Dialog's
+* Create Modal Dialogs
 * CSS Framework Agnostic (Use anything you want)
-* depends on jQuery for positioning
-* Pass params to Modal when it is opened (e.g. text, dates, colors)
-* Send params from Modal back to opener when Modal is updated, submitted, cancelled (e.g. text, dates, colors)
+* Position modal relative to other elements on screen (perfect for custom UI elements like date pickers, color pickers, text input, etc.)
+* Ability to pass params to Modal when it is opened
+* Ability to return params from Modal back to opener when Modal is updated, submitted, cancelled
 * All positioning features from jQuery UI's position (e.g. my "left top" at "left bottom" of some button).
-* modalWillOpen callback
-* modalWillClose callback
-* modalWillCancel callback
 * Live updating of values from Modal to parent (e.g. live preview of color picker changes, input text, etc.)
 * Built in cancelling behavior (e.g. when you cancel the color preview, the color is reverted to the original color)
 * Uses click outside modal to cancel
-* Uses escape key to cancel
+* Uses escape key to cancel modal
 * Programmatically cancel (e.g. by clicking a "cancel" button or an "x" in the UI)
 * The React Modal can be used from a React component or a non-React component
 
